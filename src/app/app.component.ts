@@ -7,4 +7,25 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'first-task';
+
+
+  customers: any[]=[{name:"ssss" , country:"ffff" , company:"ffgggr" , id:"33"},
+  {name:"ssss" , country:"ffff" , company:"ffgggr" , id:"33"},
+  {name:"ssss" , country:"ffff" , company:"ffgggr" , id:"33"},
+  {name:"ssss" , country:"ffff" , company:"ffgggr" , id:"33"},
+  {name:"ssss" , country:"ffff" , company:"ffgggr" , id:"33"},
+  {name:"ssss" , country:"ffff" , company:"ffgggr" , id:"33"},
+  {name:"ssss" , country:"ffff" , company:"ffgggr" , id:"33"},
+  {name:"ssss" , country:"ffff" , company:"ffgggr" , id:"33"},
+  {name:"ssss" , country:"ffff" , company:"ffgggr" , id:"33"},
+  {name:"ssss" , country:"ffff" , company:"ffgggr" , id:"33"},
+  {name:"ssss" , country:"ffff" , company:"ffgggr" , id:"33"}];
+
+    constructor() {}
+
+    ngOnInit() {
+        
+    }
+
+
 }

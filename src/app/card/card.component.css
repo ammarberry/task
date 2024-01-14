@@ -1,29 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
-@import "primeng/resources/themes/lara-light-blue/theme.css";
-@import "primeng/resources/primeng.css";
-@import "primeicons/primeicons.css";
-
-/* @import 'assets/theme.css'; */
-
-body {
-    font-family: 'Neo Sans Arabic', 'Inter', sans-serif;
-  }
-  html {
-    font-family: 'Neo Sans Arabic', 'Inter', sans-serif;
-  }
-  
-  
-/* Styles for screens with width less than or equal to 300px */
-/* @media screen and (max-width: 300px) {
-    /* Your styles for screens <= 300px */
-  
-  
-  /* Styles for screens between 301px and 600px */
-  
 
 
+
+  
+  
   @media screen and (min-width: 301px) and (max-width: 600px) {
-    /* Your styles for screens between 301px and 600px */
+    
+    
   }
   
   /* Styles for screens between 601px and 900px */
@@ -50,3 +32,30 @@ body {
   @media screen and (min-width: 2001px) {
     /* Your styles for screens > 2000px */
   }
+  
+  
+  
+ ::ng-deep .p-button{
+    color: white;
+}
+
+i{
+    color: #6366F1 ;
+}
+
+
+ 
+    
+
+
+.fontStyle{
+    font-size: small;
+    font-family: serif;
+    font-weight: lighter;
+}
+.xx{
+    border-bottom: 1px white;
+}
+::ng-deep .ccv .p-button{
+    height: 20px;
+}

@@ -1,0 +1,21 @@
+@media screen and (min-width: 301px) and (max-width: 600px) {
+    
+  .div1{
+    bottom: 50%;;
+    margin-left:0;
+    background-color: red;
+  }
+}
+  
+
+  ::ng-deep .p-inputswitch.p-inputswitch-checked .p-inputswitch-slider {
+    background: rgb(161, 87, 214);
+}
+  ::ng-deep  .button3 .p-button  {
+    background: rgb(161, 87, 214);
+}
+::ng-deep  .tablebutton .p-button  {
+  background: rgb(161, 87, 214);
+  width: 30px;
+  border:rgb(161, 87, 214) light ;
+}

@@ -1,0 +1,23 @@
+
+
+@media  (width <= 300px <= 600) {
+
+    /* .xx{
+       max-width: 100;
+       margin-left: auto;
+       margin-right: auto;
+       padding-left: 0.5rem;
+       padding-right: 0.5rem;
+       background-color: blue;
+       
+   } */
+   }
+  
+  ::ng-deep .edit .p-button{
+    background-color:rgba(255, 255, 255, 0.457);
+    color: black;
+  
+}
+::ng-deep .arrow .p-button{
+    background-color: rgb(179, 177, 177);
+}
