@@ -45,7 +45,7 @@ export class DiagramComponent {
         // }
       ],
       chart: {
-        height: 200,
+        height: 305,
         type: "area" 
       },
       dataLabels: {

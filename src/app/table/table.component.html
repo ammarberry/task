@@ -1,14 +1,14 @@
-<div dir="" class=" ">
+<div dir="" >
     <div class="grid">
-        <div dir="rtl" class="col-4 md:col-6 lg:col-4 col-offset-4 justify-content-end flex-wrap  ">
+        <div dir="rtl" class="col-4 md:col-4 lg:col-4   bg-gray-200  ">
             <div class="text-center p-1 border-round-sm   ">
                 <div class="text-left p-3 border-round-sm  font-bold">
-                    <p-inputSwitch [(ngModel)]="checked" styleClass="custom-input-switch"></p-inputSwitch>
+                    <p-inputSwitch [(ngModel)]="checked" styleClass="custom-input-switch "></p-inputSwitch>
                     <p-button class=" button3 text-white mr-3 mt-3 font-light" label="حجز تذكرة جديده"></p-button>
                 </div>
             </div>
         </div>
-        <div dir="rtl" class="  col-4 md:col-4 lg:col-4 c p-3">
+        <div dir="rtl" class="  col-4 md:col-4 lg:col-4 c p-3 col-offset-4 bg-gray-200">
             <div class=" div1 text-center p-3 border-round-sm  font-bold">
                 <div class=" div1 text-right  border-round-sm font-bold font-">
                     <span class="p-input-icon-left  ">
@@ -18,41 +18,45 @@
                             type="text" placeholder="بحث عن" pInputText [(ngModel)]="value" />
 
                     </span>
-                    <p-button icon="pi pi-sort-alt" severity="help"></p-button>
+                    <p-button  class=" sort1 pr-2 " icon="pi pi-sort-alt" ></p-button>
                 </div>
             </div>
         </div>
-
+        
     </div>
-    <div dir="rtl" class="col-12">
-        <p-table [value]="customers" [paginator]="true " [rows]="7" [showCurrentPageReport]="true "
-            [tableStyle]="{ 'min-width': '50rem' }"
-            currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
-            [rowsPerPageOptions]="[5, 10, 20]">
-            <ng-template pTemplate="header">
-                <tr>
-                    <th style="width:25%">المستخدم</th>
-                    <th style="width:25%">رقم التذكرة</th>
-                    <th style="width:25%">قيمه التذكره</th>
-                    <th style="width:25%">السينمات</th>
-                    <th style="width:25%">الاشخاص</th>
-                    <th style="width:25%">عدد مرات الشراء</th>
-                    <th style="width:25%">التذكره </th>
-                    <th style="width:25%"></th>
-                </tr>
-            </ng-template>
-            <ng-template pTemplate="body" let-customer>
-                <tr>
-                    <td>{{ customer.name }}</td>
-                    <td>{{ customer.ticket }}</td>
-                    <td>{{ customer.price }}</td>
-                    <td>{{ customer.cinema }}</td>
-                    <td>{{ customer.persons }}</td>
-                    <td>{{ customer.buytime }}</td>
-                    <!-- <td>{{ customer.name }}<p-button class="tablebutton" icon="pi pi-download "iconPos="left" size="small"></p-button></td> -->
-                </tr>
-            </ng-template>
+<div dir="rtl" class="col-12">
+    <p-table  [value]="customers"  [showCurrentPageReport]="true " [paginator]="true " [rows]="7"
+    
+    [tableStyle]="{ 'min-width': '50rem' }"
+        currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+        [rowsPerPageOptions]="[5, 10, 20]">
+        <ng-template pTemplate="header">
+            <tr>
+                <th pSortableColumn="name" style="width:15%">المستخدم<p-sortIcon field="name"></p-sortIcon></th>
+                <th pSortableColumn="ticket" style="width:15%">رقم التذكرة</th>
+                <th pSortableColumn="price" style="width:15%">قيمه التذكره </th>
+                <th pSortableColumn="cinema" style="width:15%">السينمات </th>
+                <th pSortableColumn="persons" style="width:15%">الاشخاص </th>
+                <th pSortableColumn="buytime" style="width:15%">عدد مرات الشراء </th>
+                <th pSortableColumn="buytime" style="width:15%">التذكره </th>
+                <th pSortableColumn="" style="width:15%"></th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-customer>
+            <tr>
+                <td>{{ customer.name }}</td>
+                <td>{{ customer.ticket }}</td>
+                <td>{{ customer.price }}</td>
+                <td>{{ customer.cinema }}</td>
+                <td>{{ customer.persons }}</td>
+                <td>{{ customer.buytime }}</td>
+                <td>{{ customer.buytime }}</td>
+                <td><p-button class="tablebutton bg-indigo-300" icon="pi pi-download "iconPos="left" size="small"></p-button></td>
+            </tr>
+        </ng-template>
 
 
-        </p-table>
-    </div>
+    </p-table>
+</div>
+
+

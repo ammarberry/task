@@ -1,61 +1,27 @@
 
 
-
-  
-  
-  @media screen and (min-width: 301px) and (max-width: 600px) {
-    
-    
-  }
-  
-  /* Styles for screens between 601px and 900px */
-  @media screen and (min-width: 601px) and (max-width: 900px) {
-    /* Your styles for screens between 601px and 900px */
-  }
-  
-  /* Styles for screens between 901px and 1200px */
-  @media screen and (min-width: 901px) and (max-width: 1200px) {
-    /* Your styles for screens between 901px and 1200px */
-  }
-  
-  /* Styles for screens between 1201px and 1600px */
-  @media screen and (min-width: 1201px) and (max-width: 1600px) {
-    /* Your styles for screens between 1201px and 1600px */
-  }
-  
-  /* Styles for screens between 1601px and 2000px */
-  @media screen and (min-width: 1601px) and (max-width: 2000px) {
-    /* Your styles for screens between 1601px and 2000px */
-  }
-  
-  /* Styles for screens greater than 2000px */
-  @media screen and (min-width: 2001px) {
-    /* Your styles for screens > 2000px */
-  }
-  
-  
-  
- ::ng-deep .p-button{
-    color: white;
-}
-
-i{
-    color: #6366F1 ;
+h1, h2, h3, h4, h5, h6,p {
+  font-family: 'Neo Sans Arabic', sans-serif;
 }
 
 
+  
+
+::ng-deep .p-button:hover{
+  background-color: #6A5ACD;
+}
  
-    
+  ::ng-deep .p-button{
+      color: white;
+    }
 
 
-.fontStyle{
-    font-size: small;
-    font-family: serif;
-    font-weight: lighter;
-}
-.xx{
-    border-bottom: 1px white;
-}
 ::ng-deep .ccv .p-button{
     height: 20px;
+    box-sizing: border-box;
+    margin-left:0%;
+    
+   
 }
+
+

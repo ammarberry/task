@@ -1,21 +1,31 @@
-@media screen and (min-width: 301px) and (max-width: 600px) {
-    
-  .div1{
-    bottom: 50%;;
-    margin-left:0;
-    background-color: red;
-  }
-}
-  
-
   ::ng-deep .p-inputswitch.p-inputswitch-checked .p-inputswitch-slider {
-    background: rgb(161, 87, 214);
-}
-  ::ng-deep  .button3 .p-button  {
-    background: rgb(161, 87, 214);
-}
-::ng-deep  .tablebutton .p-button  {
-  background: rgb(161, 87, 214);
-  width: 30px;
-  border:rgb(161, 87, 214) light ;
-}
+    background: #7B68EE;
+  }
+
+  ::ng-deep .button3 .p-button {
+    background: #7B68EE;
+    border-color: #7B68EE;
+  }
+  ::ng-deep .button3 .p-button:hover {
+    background: #6A5ACD;
+    
+  }
+
+  ::ng-deep .tablebutton .p-button {
+    background: #7B68EE;
+    width: 30px;
+  }
+
+  ::ng-deep .tablebutton .p-button:hover {
+    background: #6A5ACD;
+    width: 30px;
+  }
+  ::ng-deep .sort1 .p-button:hover {
+    background: #6A5ACD;
+  }
+  ::ng-deep .sort1 .p-button {
+    background: #7B68EE;
+    border-color: #7B68EE;
+  }
+  
+  

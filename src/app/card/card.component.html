@@ -1,18 +1,19 @@
-<div class="grid">
-    <div class="  col-12 md:col-6 lg:col-4">
-        <div class="text-center p-3 border-round-sm  bg-indigo-300 font-bold">
+<div class="grid ">
+    <div class="col-12 border-round-xl bg-indigo-300 ">
+        <div class=" col-12 text-center p-3 border-round-xl  bg-indigo-300 font-bold">
             <div class="grid">
-                <div class="col-4 bg-indigo-300">
-                    <div class=" text-center border-round-sm  font-bold">
-                        <p-button class=" " icon="pi pi-trash" [rounded]="true" [text]="true" severity=""></p-button>
+                <div class="col-2 gg  bg-indigo-300">
+                    <div class=" max-w-min md:max-w-max lg:max-w-max text-center border-round-xl  font-bold">
+                        <p-button class=" btnColor max-w-min md:max-w-max lg:max-w-max " icon="pi pi-trash" [rounded]="true" [text]="true" severity=""></p-button>
                     </div>
                 </div>
-                <div class=" card1 sm:col-12 md:col-6 lg:col-8  bg-indigo-300">
-                    <div class="text-center border-round-sm bg-indigo-300 font-bold ">
-                        <span class="p-input-icon-left">
+                <div class="col-10 dd bg-indigo-300">
+                    <div class=" text-center border-round-xl bg-indigo-300 font-bold ">
+                        <span class="  p-input-icon-left">
                             <p class="text-white">عرض التذكرة الخاصة بالفيلم </p>
-                            <i class=" cursor-pointer pi pi-copy  "></i>
-                            <input pInputText type="text"
+                           
+                            <i (click)="ClipBoardCopy(userInput)" class=" cursor-pointer pi pi-copy  "></i>
+                            <input #userInput pInputText type="text"
                                 class=" max-w-min md:max-w-max lg:max-w-max input1 p-inputtext-sm" placeholder=""
                                 [(ngModel)]="value" />
                             <p class="text-white fontStyle">فعال حتي 15 يوليو2023</p>
@@ -21,21 +22,19 @@
                 </div>
             </div>
         </div>
-        <div class="text-center border-round-sm bg-indigo-300 font-bold">
+        <div class=" col-12 border-round-xl bg-indigo-300 font-bold">
             <div class="grid">
-                <div class="x bg-indigo-300">
-                    <div class=" sm:col-12 md:col-6 lg:col-4 text-center border-round-sm font-bold">
-
-                        <qrcode [qrdata]="'Your QR Code Data Here'"
+                <div class=" bg-indigo-300">
+                    <div  class="  col-4 text-center border-round-xl font-bold">
+                        <qrcode dir="" [qrdata]="'Your QR Code Data Here'"
                             class=" max-w-min md:max-w-max lg:max-w-max custom-qrcode"></qrcode>
                     </div>
                 </div>
-                <div dir="rtl" class="  col-offset-4 mt-6">
-                    <div class="text-center border-round-sm bg-indigo-300 font-light">
-                        <div dir="rtl" class="  flex  justify-content  ccv ">
-                            <p class="text-white ">خصم</p><br>
-                            <p class="text-white ">25%</p>
-                            <p-button class="max-w-min md:max-w-max lg:max-w-max text-white mr-3 mt-3" label="مشاركة"
+                <div class="col-4 col-offset-4 ">
+                    <div class=" text-center border-round-xl bg-indigo-300 font-light">
+                        <div dir="rtl" class=" ccv ">
+                            <p class="text-white ">25% خصم</p>
+                            <p-button  class=" text-white" label="مشاركة"
                                 [outlined]="true" icon="pi pi-send " iconPos="left" size="small"></p-button>
                         </div>
                     </div>
